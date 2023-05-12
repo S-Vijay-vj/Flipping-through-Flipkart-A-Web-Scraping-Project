@@ -5,7 +5,10 @@ import csv
 # Creating a fastapi instance
 app = FastAPI()
 
-
+# Create root path
+@app.get('/')
+async def welcome():
+    return f"welcome"
 # path operation decorator
 @app.get("/data")
 # path operation function
