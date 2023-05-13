@@ -8,7 +8,7 @@ app = FastAPI()
 # Create root path
 @app.get('/')
 async def welcome():
-    return f"welcome"
+    return {'welcome':'all'}
 # path operation decorator
 @app.get("/data")
 # path operation function
