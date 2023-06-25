@@ -15,7 +15,7 @@ async def welcome():
 async def read_data():
     # UTF-8 is commonly used for text files, web pages, and APIs that handle multilingual text data.
     with open(
-        "D:\\python\\webscraping\\Flipkart_web_scraping\\flipkart_laptop_scraping.csv",
+        "flipkart_laptop_scraping.csv",
         newline="",
         encoding="utf-8",
     ) as csvfile:
