@@ -105,7 +105,7 @@ Here is the [Jupyter Notebook](flipkart_laptops_scraping.ipynb) for reference.
           return data
       ```
 
-Here is the [python file](api.py) for reference.
+Here is the [python file](/api/api.py) for reference.
 
 ---
 
