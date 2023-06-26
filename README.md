@@ -72,7 +72,7 @@ Here is the [Jupyter Notebook](flipkart_laptops_scraping.ipynb) for reference.
 
 ---
 
-## Building API 
+## <b>Building API</b> 
 
 1) Importing libraries.
 
@@ -106,5 +106,34 @@ Here is the [Jupyter Notebook](flipkart_laptops_scraping.ipynb) for reference.
       ```
 
 Here is the [python file](api.py) for reference.
+
+---
+
+## <b>API Deployment</b>
+
+Deploying API in the cloud can enable users to retrieve the data using HTTP requests.
+
+This project uses <b>Deta Space</b> - a personal cloud computing platform that enables individuals to turn their ideas into reality using their own personal cloud computer. 
+
+Here is the official FastAPI documentation about deploying the API created with FastAPI.
+
+[FastAPI documentation](https://fastapi.tiangolo.com/deployment/deta/)
+
+
+Once the API is successfully deployed, a URL is created. This URL will be useful for accessing our API.
+```
+    https://flipkart_api-1-e6861001.deta.app/data
+```
+---
+## <b>Retrieving the data from the deployed API</b>
+
+Users can retrieve data from the deployed API using HTTP requests to the API. This returns the data in JSON format.
+
+Retrieving data using request library.
+```
+    data = requests.get("https://flipkart_api-1-e6861001.deta.app/data")
+```
+
+Here is the [notebook file](retrieve_data_from_deployed_api.ipynb) for reference.
 
 ---
