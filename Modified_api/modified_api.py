@@ -1,5 +1,3 @@
-import pandas as pd
-import csv
 from bs4 import BeautifulSoup 
 import requests
 from fastapi import FastAPI
@@ -77,4 +75,4 @@ async def get_data(data):
                 {"product": product, "price": price, "MRP": mrp, "ratings": rating}
             )
 
-        return product_dict
+    return product_dict
