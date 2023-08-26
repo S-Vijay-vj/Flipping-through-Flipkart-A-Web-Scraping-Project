@@ -44,6 +44,8 @@ Uvicorn is used to run the FastAPI application that provides a RESTful API to se
 ---
 # Project Flow
 
+# Version 1:
+
 ## <b>Web scraping</b>
 
  1) Importing libraries
@@ -137,3 +139,24 @@ Retrieving data using request library.
 Here is the [notebook file](retrieve_data_from_deployed_api.ipynb) for reference.
 
 ---
+
+# Version 2:
+
+[API file](Modified_api\modified_api.py)
+
+• Developed a RESTful API using FastAPI and Beautiful Soup , featuring a dynamic path variable to specify desired phone or laptop models.
+
+```bash
+    https://flipkart-scraping-v2.onrender.com/docs
+```
+• Leveraged the **dynamic path variable** to efficiently scrape detailed data about specific products from multiple Flipkart pages.
+ ```bash
+ /data/{data}
+ ```
+
+• Deployed the API on Render cloud hosting for effortless access to structured JSON data via HTTP requests.
+
+Refer to this documentation: https://render.com/docs/deploy-fastapi
+
+• This API Effectively reduces the time required for scraping different product information from multiple Flipkart pages, streamlining the process and enhancing productivity.
+
