@@ -10,7 +10,7 @@ app = FastAPI()
 async def welcome():
     return "Welcome to Flipping to flipkart"
 
-@app.get('/data/{data}')
+@app.get('/get/{data}')
 async def get_data(data):
 
     product_dict = []
